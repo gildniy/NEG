@@ -1,0 +1,91 @@
+/*   VARIABLES */
+
+/* NEG TEMPLATE'S COLORS GRADATION  */
+
+/* Gradation Levels */
+
+$high: 10%;
+$higher: 30%;
+$highest: 50%;
+$transparent: 0.08;
+
+/*  Light - Dark (For Regular text and sections) */
+$dark-color: #a3a3a3; //#7e7e7e
+///////////////////////////////
+$light-color: lighten($dark-color, $high);
+$lighter-color: lighten($dark-color, $higher);
+$lightest-color: lighten($dark-color, $highest);
+/////////////////////////////////////////////////////////////////
+$darker-color: darken($dark-color, $higher);
+$darkest-color: darken($dark-color, $high);
+$night: darken($dark-color, $highest);
+$dark-color-transparent: rgba(126, 126, 126, $transparent);
+
+/*  First Level (For Text links and linked sections) */
+$primary-normal-color: #b25a23;
+///////////////////////////////
+$primary-light-color: lighten($primary-normal-color, $high);
+$primary-lighter-color: lighten($primary-normal-color, $higher);
+$primary-lightest-color: lighten($primary-normal-color, $highest);
+/////////////////////////////////////////////////////////////////
+$primary-dark-color: darken($primary-normal-color, $high);
+$primary-darker-color: darken($primary-normal-color, $higher);
+$primary-darkest-color: darken($primary-normal-color, $highest);
+$primary-normal-color-transparent: rgba(178, 90, 35, $transparent);
+
+/*  Second Level (For Warn links and warning sections) */
+$secondary-normal-color: #799a4b;
+///////////////////////////////
+$secondary-light-color: lighten($secondary-normal-color, $high);
+$secondary-lighter-color: lighten($secondary-normal-color, $higher);
+$secondary-lightest-color: lighten($secondary-normal-color, $highest);
+/////////////////////////////////////////////////////////////////
+$secondary-dark-color: darken($secondary-normal-color, $high);
+$secondary-darker-color: darken($secondary-normal-color, $higher);
+$secondary-darkest-color: darken($secondary-normal-color, $highest);
+$secondary-normal-color-transparent: rgba(121, 154, 75, $transparent);
+
+/*  Third Level(For Announce links and announcement sections) */
+$thirdly-normal-color: #006c9a;
+///////////////////////////////
+$thirdly-light-color: lighten($thirdly-normal-color, $high);
+$thirdly-lighter-color: lighten($thirdly-normal-color, $higher);
+$thirdly-lightest-color: lighten($thirdly-normal-color, $highest);
+/////////////////////////////////////////////////////////////////
+$thirdly-dark-color: darken($thirdly-normal-color, $high);
+$thirdly-darker-color: darken($thirdly-normal-color, $higher);
+$thirdly-darkest-color: darken($thirdly-normal-color, $highest);
+$thirdly-normal-color-transparent: rgba(0, 108, 154, $transparent);
+
+/*  Forth Level (For Danger links and danger sections) */
+$fourth-normal-color: #856aa7;
+///////////////////////////////
+$fourth-light-color: lighten($fourth-normal-color, $high);
+$fourth-lighter-color: lighten($fourth-normal-color, $higher);
+$fourth-lightest-color: lighten($fourth-normal-color, $highest);
+/////////////////////////////////////////////////////////////////
+$fourth-dark-color: darken($fourth-normal-color, $high);
+$fourth-darker-color: darken($fourth-normal-color, $higher);
+$fourth-darkest-color: darken($fourth-normal-color, $highest);
+$thirdly-normal-color-transparent: rgba(133, 106, 167, $transparent);
+
+/*  FONTS  */
+
+/*  Base  */
+$base-font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*  Headers  */
+$heading-font-family: "gubblebum-blocky", monospace;
+
+/*  Paragraphs  */
+$paragraph-font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+/*  BACKGROUNDS  */
+$light-background: $lighter-color;
+$dark-background: $darkest-color;
+$background-img-materials: '../../assets/img/school-bg.png';
+$background-img-gradient: '../../assets/img/gradient-bg.png';
+
+/* SECTIONS */
+$section-min-height: 50px;
+

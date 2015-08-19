@@ -1,0 +1,33 @@
+/*
+ * NEG Project's Template v0.0.1
+ *
+ * Copyright 2015 Gildas NIiyigena
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @gildniy.
+ */
+
+/*  BASE - Base Styles:  */
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/base';
+
+/*  LAYOUTS - Layouts Styles:  */
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/nav';
+@import 'layouts/sidebar';
+
+/*  MODULES - Modules Styles:  */
+@import 'modules/blocks';
+@import 'modules/btns';
+@import 'modules/components';
+@import 'modules/forms';
+@import 'modules/sections';
+@import 'modules/tables';
+@import 'modules/typography';
+@import 'modules/widgets';
+@import 'modules/carousel';
+

@@ -1,0 +1,161 @@
+/* MIXINS */
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin add-border($size, $color, $position) {
+  @if $position == all {
+    border: $size solid $color;
+  } @else if $position == top {
+    border-top: $size solid $color;
+  } @else if $position == right {
+    border-right: $size solid $color;
+  } @else if $position == bottom {
+    border-bottom: $size solid $color;
+  } @else if $position == left {
+    border-left: $size solid $color;
+  } @else if $position == top-bottom {
+    border-bottom: $size solid $color;
+    border-top: $size solid $color;
+  } @else if $position == left-right {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+}
+
+@mixin font-use($use) {
+  @if $use == 'base' {
+    font-family: $base-font-family;
+    line-height: 1.7em;
+  } @else if $use == 'title' {
+    font-family: $base-font-family;
+    line-height: 1.7em;
+    font-weight: bold;
+  } @else if $use == 'paragraph' {
+    font-family: $paragraph-font-family;
+    line-height: 1.7em;
+    max-width: 80%;
+  } @else if $use == 'heading' {
+    font-family: $heading-font-family;
+    line-height: 1.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+  } @else if $use == 'btn' {
+    //@include font-use('base');
+    font-family: $base-font-family;
+    line-height: 1.7em;
+    text-transform: uppercase;
+  }
+
+}
+
+@mixin typo($type) {
+  @if $type == base1 {
+    color: $darker-color;
+    font-size: 18px;
+    @include font-use('base');
+
+  } @else if $type == base2 {
+    color: $darker-color;
+    font-size: 15px;
+    @include font-use('base');
+
+  } @else if $type == base3 {
+    color: $darker-color;
+    font-size: 13px;
+    @include font-use('base');
+
+  } @else if $type == base4 {
+    color: $darker-color;
+    font-size: 11px;
+    @include font-use('base');
+
+  } @else if $type == title1 {
+    color: $darker-color;
+    font-size: 18px;
+    @include font-use('title');
+
+  } @else if $type == title2 {
+    color: $darker-color;
+    font-size: 15px;
+    @include font-use('title');
+
+  } @else if $type == title3 {
+    color: $darker-color;
+    font-size: 13px;
+    @include font-use('title');
+
+  } @else if $type == paragraph1 {
+    color: $dark-color;
+    font-size: 25px;
+    @include font-use('paragraph');
+
+  } @else if $type == paragraph2 {
+    color: $dark-color;
+    font-size: 18px;
+    @include font-use('paragraph');
+
+  } @else if $type == paragraph3 {
+    color: $dark-color;
+    font-size: 15px;
+    @include font-use('paragraph');
+
+  } @else if $type == paragraph4 {
+    color: $dark-color;
+    font-size: 13px;
+    @include font-use('paragraph');
+
+  } @else if $type == heading1 {
+    color: $lighter-color;
+    font-size: 50px;
+    @include font-use('heading');
+
+  } @else if $type == heading2 {
+    color: $darkest-color;
+    font-size: 42px;
+    @include font-use('heading');
+
+  } @else if $type == heading3 {
+    color: $darker-color;
+    font-size: 35px;
+    @include font-use('heading');
+
+  } @else if $type == heading4 {
+    color: $primary-normal-color;
+    font-size: 25px;
+    @include font-use('heading');
+
+  } @else if $type == heading5 {
+    color: $primary-normal-color;
+    font-size: 20px;
+    @include font-use('heading');
+
+  } @else if $type  == heading6 {
+    color: $lighter-color;
+    font-size: 18px;
+    @include font-use('heading');
+
+  } @else if $type == btn-txt1 {
+    color: $lighter-color;
+    font-size: 18px;
+    @include font-use('btn');
+
+  } @else if $type == btn-txt2 {
+    color: $lighter-color;
+    font-size: 15px;
+    @include font-use('btn');
+
+  } @else if $type == btn-txt3 {
+    color: $lighter-color;
+    font-size: 13px;
+    @include font-use('btn');
+
+  } @else if $type == btn-txt5 {
+    color: $lighter-color;
+    font-size: 11px;
+  }
+
+}

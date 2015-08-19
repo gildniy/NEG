@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Neg
+        psr4_prefix: Neg
+        src_path: app

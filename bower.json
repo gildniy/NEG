@@ -1,0 +1,36 @@
+{
+  "name": "neg",
+  "version": "0.0.1",
+  "authors": [
+    "NIYIGENA Gildas <gildniy05@gmail.com>"
+  ],
+  "description": "National Examination Gateway",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "Education",
+    "Empowering",
+    "Exams",
+    "Quizzes"
+  ],
+  "license": "MIT",
+  "homepage": "wwww.nationalexamination.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "fontawesome": "~4.3.0"
+  },
+  "ajax_crud": "git@github.com:DavidVranish/AjaxCrud.git"
+}

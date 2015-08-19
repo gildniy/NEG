@@ -1,0 +1,52 @@
+{
+  "name": "bootstrap-flat-sass",
+  "description": "A flat theme for Bootstrap, inspired by Microsoft's Modern Design Language (originally created for Windows Phone and Windows 8 and updated for Windows 10), Google's Material Design Language, and Apple's flatter design language for iOS.",
+  "keywords": [
+    "modern",
+    "metro",
+    "bootstrap",
+    "css",
+    "css3",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "html5"
+  ],
+  "homepage": "http://scottdorman.github.io/bootstrap-flat/",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "less/bootstrap-flat.less",
+    "less/bootstrap-flat-extras.less"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "*.nupkg",
+    "*.sln",
+    "compilerconfig.json",
+    ".settings/",
+    "bower_components/"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1",
+    "bootstrap": ">= 3.0.0"
+  },
+  "_release": "a98467d5f6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a98467d5f63535f026eb4c19f40ef3d386e48cf0"
+  },
+  "_source": "git://github.com/scottdorman/bootstrap-flat-sass.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-flat-sass",
+  "_direct": true
+}

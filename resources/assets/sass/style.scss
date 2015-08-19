@@ -1,0 +1,21 @@
+/* resources/assets/sass */
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin-ext);
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../vendor/bootstrap-flat-sass/sass/bootstrap-flat.scss";
+@import "../vendor/fontawesome/scss/font-awesome.scss";
+@import "../vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
+@import "../vendor/bootstrap-offcanvas/src/sass/bootstrap.offcanvas.scss";
+
+//@import "../vendor/bootstrap-select/dist/css/bootstrap-select.css";
+//@import "../vendor/bootstrap-table/src/bootstrap-table.css";
+
+$font-defaults: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-general: 'Noto Sans', $font-defaults;
+$theme-font-size: 13px;
+$btn-font-weight: 300;
+
+body, label, .checkbox label {
+  font-family: $font-family-general;
+  font-size: $theme-font-size;
+  font-weight: $btn-font-weight;
+}

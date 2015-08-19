@@ -1,0 +1,89 @@
+@import "bootstrap-flat/variables";
+@import "bootstrap-flat/mixins";
+
+/*
+ * Form inputs
+ *
+ * Additional formatting for form inputs, including a switch (toggle) style for checkboxes and radio buttons.
+ * Requires a base and modifier class.
+ */
+.switch-input {
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+  padding: 10px 60px 0 0;
+  position: relative;
+
+  input {
+    left: -9999px;
+    position: absolute;
+
+    &:checked + i {
+      border-color: $input-border;
+
+      &:before {
+        right: 33px;
+      }
+
+      &:after {
+        color: #777;
+        content: attr(data-swon-text);
+        text-align: right;
+      }
+    }
+  }
+
+  &.disabled i {
+    cursor: $cursor-disabled;
+
+    &:before {
+      background-color: $input-bg-disabled;
+    }
+  }
+
+  i {
+    background: #fff;
+    border: 1px solid $input-border;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    content: '';
+    display: block;
+    font-style: normal;
+    @include size(50px, 20px);
+    position: absolute;
+    right: 0;
+    top: 6px;
+
+    &:before {
+      background-color: #406da4;
+      @include transition-property(right);
+      @include transition-duration(0.1s);
+      @include transition-timing-function(ease-in);
+      border-radius: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      right: 4px;
+      @include square(10px);
+      top: 4px;
+    }
+
+    &:after {
+      color: #aaa;
+      content: attr(data-swoff-text);
+      font-size: 10px;
+      font-weight: 700;
+      left: 8px;
+      line-height: 15px;
+      position: absolute;
+      right: 8px;
+      top: 2px;
+    }
+  }
+}
+
+.switch {
+  text-align: center;
+}

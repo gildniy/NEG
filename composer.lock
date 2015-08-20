@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0381e1780f49e3b2755c84e9e630b50b",
+    "hash": "fbf9078e73dca2642daec2973328283f",
     "packages": [
         {
             "name": "ads/ajax-crud-generator",
@@ -261,7 +261,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bosnadev/Repositories/zipball/637c7038abd65132cd9a123508cb8117413b0b8e",
+                "url": "https://api.github.com/repos/Bosnadev/Repositories/zipball/8595460384c198544c3bcfaf1d70fdf877316ff8",
                 "reference": "637c7038abd65132cd9a123508cb8117413b0b8e",
                 "shasum": ""
             },
@@ -471,7 +471,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/3159559ba025e4cddfd21ed5c21a26323fce283c",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/a52937ae17813d4e3da4683819eae1d5819a7c73",
                 "reference": "3159559ba025e4cddfd21ed5c21a26323fce283c",
                 "shasum": ""
             },
@@ -521,7 +521,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/image-validator/zipball/3eb9cf2e88d9002a85ae2278d65ff24278d6cd6a",
+                "url": "https://api.github.com/repos/cviebrock/image-validator/zipball/0f49331e1253a821192d16b52a684ad079b6dc9a",
                 "reference": "3eb9cf2e88d9002a85ae2278d65ff24278d6cd6a",
                 "shasum": ""
             },
@@ -1971,6 +1971,54 @@
             "time": "2015-03-11 20:06:43"
         },
         {
+            "name": "jeroen-g/laravel-packager",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jeroen-G/laravel-packager.git",
+                "reference": "22167696e0b6d499095a76c3f39de03a693968e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/22167696e0b6d499095a76c3f39de03a693968e8",
+                "reference": "22167696e0b6d499095a76c3f39de03a693968e8",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "illuminate/console": "~5",
+                "illuminate/filesystem": "~5",
+                "illuminate/support": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JeroenG\\Packager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.1"
+            ],
+            "authors": [
+                {
+                    "name": "JeroenG",
+                    "email": "jeroengjeroeng@gmail.com",
+                    "homepage": "https://github.com/Jeroen-G"
+                }
+            ],
+            "description": "A cli tool for creating Laravel packages.",
+            "homepage": "https://github.com/Jeroen-G/laravel-packager",
+            "keywords": [
+                "Skeleton",
+                "github",
+                "laravel",
+                "package",
+                "packager"
+            ],
+            "time": "2015-06-27 12:07:00"
+        },
+        {
             "name": "kirkbushell/eloquence",
             "version": "1.4.5",
             "source": {
@@ -3047,7 +3095,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mitulgolakiya/laravel-api-generator/zipball/f7bc8e0b6c3e6bffe58095497881b02e7864b8a8",
+                "url": "https://api.github.com/repos/mitulgolakiya/laravel-api-generator/zipball/b207841e720baa21149c5075f1f6711f45befcef",
                 "reference": "f7bc8e0b6c3e6bffe58095497881b02e7864b8a8",
                 "shasum": ""
             },
@@ -3913,7 +3961,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/933cab5fde27ec6ee94b4633aedc6891ece58cd2",
+                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/158144e11fe9ab9260c738b611ef4371f53cb1e5",
                 "reference": "933cab5fde27ec6ee94b4633aedc6891ece58cd2",
                 "shasum": ""
             },
@@ -3970,7 +4018,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/4939463c9aaff5352a563c7557b910a9c48bcdc0",
+                "url": "https://api.github.com/repos/spatie/laravel-newsletter/zipball/cff349228d09841318fb8772d6299e1ee25eb17a",
                 "reference": "4939463c9aaff5352a563c7557b910a9c48bcdc0",
                 "shasum": ""
             },
@@ -5087,7 +5135,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Zizaco/confide/zipball/9b5223de78bcc134e2c1ccf40600fbcba34e24be",
+                "url": "https://api.github.com/repos/Zizaco/confide/zipball/de93c46c335be51929805688da8a5ecb3fd04e52",
                 "reference": "9b5223de78bcc134e2c1ccf40600fbcba34e24be",
                 "shasum": ""
             },

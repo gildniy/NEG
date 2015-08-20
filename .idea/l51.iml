@@ -41,6 +41,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jeroen-g/laravel-packager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kirkbushell/eloquence" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kris/laravel-form-builder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
@@ -180,6 +181,7 @@
           <root url="file://$MODULE_DIR$/vendor/cviebrock/image-validator" />
           <root url="file://$MODULE_DIR$/vendor/mailchimp/mailchimp" />
           <root url="file://$MODULE_DIR$/vendor/hashids/hashids" />
+          <root url="file://$MODULE_DIR$/vendor/jeroen-g/laravel-packager" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/bican/roles" />
           <root url="file://$MODULE_DIR$/vendor/symfony/http-foundation" />
@@ -298,6 +300,7 @@
           <root url="file://$MODULE_DIR$/vendor/cviebrock/image-validator" />
           <root url="file://$MODULE_DIR$/vendor/mailchimp/mailchimp" />
           <root url="file://$MODULE_DIR$/vendor/hashids/hashids" />
+          <root url="file://$MODULE_DIR$/vendor/jeroen-g/laravel-packager" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/bican/roles" />
           <root url="file://$MODULE_DIR$/vendor/symfony/http-foundation" />

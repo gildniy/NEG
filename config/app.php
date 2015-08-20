@@ -177,6 +177,7 @@ return [
         Caffeinated\Menus\MenusServiceProvider::class,
         Luminol\Randomizr\Providers\RandomizrServiceProvider::class,
         McCool\LaravelAutoPresenter\AutoPresenterServiceProvider::class,
+        JeroenG\Packager\PackagerServiceProvider::class,
     ],
 
     /*

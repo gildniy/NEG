@@ -46,7 +46,8 @@
     "caffeinated/menus": "~2.0",
     "luminol/randomizr": "2.x-dev",
     "filp/whoops": "1.1.7",
-    "mccool/laravel-auto-presenter": "4.0.0"
+    "mccool/laravel-auto-presenter": "4.0.0",
+    "jeroen-g/laravel-packager": "v1.0"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

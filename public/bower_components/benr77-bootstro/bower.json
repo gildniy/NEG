@@ -1,0 +1,13 @@
+{
+	"name": "benr77-bootstro",
+	"version": "v0.0.2",
+	"main": "bootstro.js",
+	"license": "MIT",
+	"authors": [
+		"clu3 (https://github.com/clu3)"
+	],
+	"description": "Tiny JS library using bootstrap's popovers to help guide your users around your website",
+	"dependencies": {
+      		"jquery": ">=1.5.0"
+  	}
+}

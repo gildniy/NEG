@@ -1,0 +1,297 @@
+/*
+* Navigation specific css styles
+*/
+
+@import "http://webfonts.ru/import/osans.css";
+
+/*
+    Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
+*/
+
+.header-menu {
+    color: #FFF;
+    height: 2em;
+    padding: .5em 0;
+    position: absolute;
+    /*top: 50px;*/
+    width: 100%;
+}
+
+.social-search > li {
+    float: left;
+    margin: 0;
+}
+
+.navbar-default {
+    -webkit-transition: min-height 0.3s ease;
+    -moz-transition: min-height 0.3s ease;
+    -ms-transition: min-height 0.3s ease;
+    -o-transition: min-height 0.3s ease;
+    transition: min-height 0.3s ease;
+    right: 0;
+    left: 0;
+    border-width: 1px 0 ;
+    border-radius: 0; /*This will be removed after installing bootsrap-flat*/
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .social-search-btn {
+    -webkit-transition: padding 0.3s ease, height 0.3s ease;
+    -moz-transition: padding 0.3s ease, height 0.3s ease;
+    -ms-transition: padding 0.3s ease, height 0.3s ease;
+    -o-transition: padding 0.3s ease, height 0.3s ease;
+    transition: padding 0.3s ease, height 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a {
+    -webkit-transition: padding 0.3s ease;
+    -moz-transition: padding 0.3s ease;
+    -ms-transition: padding 0.3s ease;
+    -o-transition: padding 0.3s ease;
+    transition: padding 0.3s ease;
+}
+
+.smallnav {
+    min-height: 40px;
+}
+
+.smallnav .navbar-brand,
+.smallnav .social-search-btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+
+.smallnav .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Search feature */
+.social-search-btn {
+    padding: 10px 1%;
+    margin: 5px;
+    color: #989898;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all 0.1s ease;
+}
+
+.social-search-btn:hover {
+    transition: all 0.1s ease;
+}
+
+a.social-search-btn {
+    text-decoration: none;
+}
+
+a#search.social-search-btn {
+    -moz-transform: scaleX(-1); /* Gecko */
+    -o-transform: scaleX(-1); /* Opera */
+    -webkit-transform: scaleX(-1); /* Webkit */
+    transform: scaleX(-1); /* Standard */
+    filter: FlipH; /* IE 6/7/8 */
+}
+
+a.navbar-brand.logo {
+    font-family: "Open Sans";
+    font-weight: 800;
+}
+
+.social-search-btn {
+    margin: 0;
+    height: 50px;
+}
+
+.navbar-brand.logo, .social-search-btn > i {
+    font-size: 20px;
+    color: #989898;
+}
+
+.navbar-brand.logo:hover, .social-search-btn:hover > i {
+    color: #00916d;
+}
+
+.hidden {
+    display: none;
+}
+
+.search_box {
+    clear: both;
+    width: 100%;
+    background: #e8ebf0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.search_box.active {
+    height: auto;
+    padding: 15px 0;
+}
+
+.search_box input {
+    width: 87%;
+    font-size: 13px;
+    margin: 0 0 0 15px;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    color: #00916d;
+}
+
+.search_box input:focus {
+    outline: none;
+}
+
+.search_box input.search_icon {
+    clear: both;
+    width: 10%;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+    margin-left: -5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #8c949d;
+    opacity: 1;
+    transition: all 0.1s ease;
+}
+
+.search_box input.search_icon:hover {
+    background: #00916d;
+}
+
+/* Spinner button for menus Mobile devices */
+.spinner-master input[type=checkbox] {
+    display: none;
+}
+
+.spinner-master {
+    height: 0;
+}
+
+@media all and (max-width: 768px) {
+
+    /* Search feature */
+    #search {
+        padding: auto;
+    }
+
+    .social-search {
+        margin: 0;
+    }
+
+    .smallnav .spinner-master, .smallnav a.social-search-btn > i {
+        -webkit-transition: margin 0.3s ease, height 0.3s ease;
+        -moz-transition: margin 0.3s ease, height 0.3s ease;
+        -ms-transition: margin 0.3s ease, height 0.3s ease;
+        -o-transition: margin 0.3s ease, height 0.3s ease;
+        transition: margin 0.3s ease, height 0.3s ease;
+    }
+
+    .smallnav .spinner-master {
+        margin: 5px 0;
+    }
+
+    a.social-search-btn > i {
+        margin-top: 5px;
+    }
+
+    .smallnav a.social-search-btn > i {
+        margin: 0;
+    }
+
+    .search_box {
+        position: absolute;
+        top: auto;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .search_box input {
+        width: 70%;
+    }
+
+    .search_box input.search_icon {
+        width: 17%;
+    }
+
+    /* Spinner button for menus Mobile devices */
+    .spinner-master * {
+        transition: all 0.3s;
+        box-sizing: border-box;
+    }
+
+    .spinner-master {
+        position: relative;
+        margin: 10px 0;
+        height: 30px;
+        width: 30px;
+        float: left;
+    }
+
+    .spinner-master label {
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 5px;
+        left: 0;
+    }
+
+    .spinner-master .spinner {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        padding: 0;
+        background-color: #989898;
+    }
+
+    .spinner-master .diagonal.part-1 {
+        position: relative;
+        float: left;
+    }
+
+    .spinner-master .horizontal {
+        position: relative;
+        float: left;
+        margin-top: 4px;
+    }
+
+    .spinner-master .diagonal.part-2 {
+        position: relative;
+        float: left;
+        margin-top: 4px;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal {
+        opacity: 0;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin-top: 10px;
+        background: #00916d;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        margin-top: -12px;
+        background: #00916d;
+    }
+
+    .menu {
+        clear: both;
+        min-width: inherit;
+        float: none;
+    }
+}

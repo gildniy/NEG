@@ -1,0 +1,41 @@
+/*!
+* NEG Template Version 0.0.1
+* Copyright 2015
+*
+* Designed and built with all the love in the world by @gildniy
+* for NEG Project.
+*/
+
+/*  RESET - Native Compass Reset Styles:
+-------------------------------------------------- */
+@import 'compass/reset';
+
+/*  BASE - Base Styles:
+-------------------------------------------------- */
+@import 'base/variables';
+@import 'base/placeholder';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/base';
+
+/*  MODULES - Module Styles
+------------------------------------------------- */
+@import 'modules/typography';
+@import 'modules/btns';
+@import 'modules/widgets';
+@import 'modules/blocks';
+@import 'modules/containers';
+
+/* COMPONENTS - Components Styles:
+-------------------------------------------------- */
+@import 'components/inlinelist';
+@import 'components/tables';
+@import 'components/forms';
+@import 'components/sections';
+
+/* LAYOUTS - Layouts Styles:
+-------------------------------------------------- */
+@import 'layouts/header';
+@import 'layouts/nav';
+@import 'layouts/sidebar';
+@import 'layouts/footer';

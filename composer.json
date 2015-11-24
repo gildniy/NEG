@@ -47,7 +47,10 @@
     "luminol/randomizr": "2.x-dev",
     "filp/whoops": "1.1.7",
     "mccool/laravel-auto-presenter": "4.0.0",
-    "jeroen-g/laravel-packager": "v1.0"
+    "jeroen-g/laravel-packager": "v1.0",
+    "codezero/cookie": "1.0.2",
+    "riari/laravel-forum": "2.4.7",
+    "laravel-doctrine/orm": "1.0.x-dev"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

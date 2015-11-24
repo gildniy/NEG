@@ -1,16 +1,22 @@
 /* resources/assets/sass */
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin-ext);
-@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../vendor/bootstrap-flat-sass/sass/bootstrap-flat.scss";
-@import "../vendor/fontawesome/scss/font-awesome.scss";
-@import "../vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
-@import "../vendor/bootstrap-offcanvas/src/sass/bootstrap.offcanvas.scss";
+//@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin-ext);
+//@import url(http://fonts.googleapis.com/css?family=Squada+One|Fjalla+One|Oswald&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import "../../../vendor/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../vendor/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../vendor/bower_components/bootstrap-flat-sass/sass/bootstrap-flat.scss";
+@import "../../../vendor/bower_components/fontawesome/scss/font-awesome.scss";
+@import "../../../vendor/bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
+@import "../../../vendor/bower_components/bootstrap-offcanvas/src/sass/bootstrap.offcanvas.scss";
+@import "../../../vendor/bower_components/bootstrap-material-design/sass/material.scss";
+//@import url(../../fonts/RamaGothicE_SemiBold.otf);
 
-//@import "../vendor/bootstrap-select/dist/css/bootstrap-select.css";
-//@import "../vendor/bootstrap-table/src/bootstrap-table.css";
+//@import "../../../vendor/bower_components/bootstrap-select/dist/css/bootstrap-select.css";
+//@import "../../../vendor/bower_components/bootstrap-table/src/bootstrap-table.css";
 
-$font-defaults: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-general: 'Noto Sans', $font-defaults;
+//$font-defaults: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//$font-family-general: 'Noto Sans', $font-defaults;
+$font-family-general: 'Open Sans', sans-serif;
 $theme-font-size: 13px;
 $btn-font-weight: 300;
 

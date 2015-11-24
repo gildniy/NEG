@@ -1,0 +1,5 @@
+# In other to prevent the download of the theme files
+<Files ~ "\blade.php$">
+    Order allow,deny
+    Deny from all
+</Files>

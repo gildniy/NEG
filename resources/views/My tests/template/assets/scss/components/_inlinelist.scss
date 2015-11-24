@@ -1,0 +1,9 @@
+ul.inlinelist {
+  @extend %inline-list;
+  li {
+    font-size: .9em;
+    a {
+      text-decoration: $link-decoration;
+    }
+  }
+}

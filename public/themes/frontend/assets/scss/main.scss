@@ -1,0 +1,28 @@
+/*!
+ * NEG Project's Template - Front v0.0.1
+ *
+ * Copyright 2015 NEG
+ * Designed and built with all the love in the world by @gildniy.
+ */
+
+/*  BASE - Base Styles:  */
+@import 'base/variables';
+@import 'base/placeholder';
+//@import 'base/normalize';
+@import 'base/mixins';
+@import 'base/base';
+
+/*  LAYOUTS - Layouts Styles:  */
+@import 'layouts/container';
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/nav';
+@import 'layouts/sidebar';
+
+/*  MODULES - Modules Styles:  */
+@import 'modules/typography';
+@import 'modules/blocks';
+@import 'modules/buttons';
+@import 'modules/components';
+@import 'modules/sections';
+

@@ -1,0 +1,50 @@
+.btn, a.btn {
+  border-radius: $buttons-border-radius;
+  display: inline-block;
+  font-weight: 500;
+  padding: 8px 14px;
+  text-decoration: $link-decoration;
+
+  //Button sizes
+
+  &.small {
+    /*This is the default button size */
+  }
+
+  &.medium {
+    font-size: 1.1em;
+    padding: 10px 16px;
+  }
+
+  &.large {
+    font-size: 1.2em;
+    padding: 12px 18px;
+  }
+
+  // Button types
+
+  &.default {
+    @include hover-bg ($button-default-bg-color);
+    color: $button-default-text-color;
+  }
+
+  &.primary {
+    @include hover-bg ($button-primary-bg-color);
+    color: $button-no-default-text-color;
+  }
+
+  &.secondary {
+    @include hover-bg ($button-secondary-bg-color);
+    color: $button-no-default-text-color;
+  }
+
+  &.notice {
+    @include hover-bg ($button-notice-bg-color);
+    color: $button-no-default-text-color;
+  }
+
+  &.error {
+    @include hover-bg ($button-error-bg-color);
+    color: $button-no-default-text-color;
+  }
+}

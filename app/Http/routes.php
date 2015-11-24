@@ -23,12 +23,17 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Test routes
+Route::get('/header', 'WelcomeController@header');
+
+//The default root url ("/") will redirect to ("/home")
+Route::get('/', 'WelcomeController@index');
+Route::get('/hello', [
+    'as' => 'home.index',
+    'uses' => 'WelcomeController@home',
+]);
 
 Route::resource('blogs', 'BlogController');
-
 Route::get('blogs/{id}/delete', [
     'as' => 'blogs.delete',
     'uses' => 'BlogController@destroy',
@@ -47,7 +52,6 @@ Route::post('users/reset_password', 'UserController@doResetPassword');
 Route::get('users/logout', 'UserController@logout');
 
 //User Management
-
 Route::get('users/manager', [
     'as' => 'users.manager.index',
     'uses' => 'UserController@index',
@@ -80,7 +84,9 @@ Route::get('users/manager/{id}/delete', [
 //The Dashboard routes...
 Route::get('userpanel/dashboard', [
     'as' => 'userpanel.dashboard',
-    'uses' => 'DashboardController@index'
+//    'uses' => 'DashboardController@index'
+    'uses' => 'DashBoardController@dashboard'
+
 ]);
 
 ////The Dashboard routes for different roles
@@ -124,6 +130,7 @@ Route::group(['prefix' => 'manage', 'middleware' => 'role:admin|super'], functio
 });
 
 Route::group(['prefix' => 'manage'], function () {
+
     // Manage users for only admin and super-admin roles(The filter is in the controller
     Route::get('users', [
         'as' => 'manage.users',
@@ -147,13 +154,13 @@ Route::group(['prefix' => 'manage'], function () {
 });
 
 // Routes for the NEG Template Design
-
 Route::group(['prefix' => 'tpl'], function () {
 
     Route::get('/', [
         'as' => 'index',
-        'uses' => 'TemplateController@index'
+        'uses' => 'TplController@index'
     ]);
 });
 
+Route::get('back', 'BackendController@index');
 

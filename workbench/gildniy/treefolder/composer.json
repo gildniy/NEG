@@ -1,0 +1,20 @@
+{
+    "name": "gildniy/treefolder",
+    "description": "",
+    "authors": [
+        {
+            "name": "gildniy",
+            "email": "gildniy05@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gildniy\\Treefolder\\": "src/Gildniy/Treefolder"
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,371 @@
+/**
+* Navigation specific css styles
+*/
+@import "http://webfonts.ru/import/osans.css";
+/*
+	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
+*/
+
+.main-nav {
+  height: 2em;
+  padding: .5em 0;
+  position: absolute;
+  width: 100%;
+}
+
+.social-search > li {
+  float: left;
+  margin: 0;
+}
+
+.navbar-default {
+  border-radius: 0;
+  border-width: 1px 0;
+  left: 0;
+  right: 0;
+  transition: min-height 0.3s ease;
+  -moz-transition: min-height 0.3s ease;
+  -ms-transition: min-height 0.3s ease;
+  -o-transition: min-height 0.3s ease;
+  -webkit-transition: min-height 0.3s ease; /*This will be removed after installing bootsrap-flat*/
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .social-search-btn {
+  transition: padding 0.3s ease, height 0.3s ease;
+  -moz-transition: padding 0.3s ease, height 0.3s ease;
+  -ms-transition: padding 0.3s ease, height 0.3s ease;
+  -o-transition: padding 0.3s ease, height 0.3s ease;
+  -webkit-transition: padding 0.3s ease, height 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a {
+  transition: padding 0.3s ease;
+  -moz-transition: padding 0.3s ease;
+  -ms-transition: padding 0.3s ease;
+  -o-transition: padding 0.3s ease;
+  -webkit-transition: padding 0.3s ease;
+}
+
+.smallnav {
+  min-height: 40px;
+}
+
+.smallnav .navbar-brand,
+.smallnav .social-search-btn {
+  height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.smallnav .navbar-nav > li > a {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* Search feature */
+.social-search-btn {
+  color: #989898;
+  font-family: sans-serif;
+  margin: 5px;
+  padding: 10px 1%;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.social-search-btn:hover {
+  transition: all 0.1s ease;
+}
+
+a.social-search-btn {
+  text-decoration: none;
+}
+
+a#search.social-search-btn {
+  filter: FlipH; /* Gecko */
+  transform: scaleX(-1); /* Opera */
+  -moz-transform: scaleX(-1); /* Webkit */
+  -o-transform: scaleX(-1); /* Standard */
+  -webkit-transform: scaleX(-1); /* IE 6/7/8 */
+}
+
+a.navbar-brand.logo, a > div.big-logo > span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.social-search-btn {
+  height: 50px;
+  margin: 0;
+}
+
+.navbar-brand.logo, .social-search-btn > i {
+  color: #989898;
+  font-size: 20px;
+}
+
+.navbar-brand.logo:hover, .social-search-btn:hover > i, a > div.big-logo > span:hover {
+  color: #0aab9f;
+}
+
+.hidden {
+  display: none;
+}
+
+.search_box {
+  background: #e8ebf0;
+  clear: both;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+}
+
+.search_box.active {
+  height: auto;
+  padding: 15px 0;
+}
+
+.search_box input {
+  background: #fff;
+  border: none;
+  color: #0aab9f;
+  font-size: 13px;
+  margin: 0 0 0 15px;
+  padding: 10px;
+  width: 87%;
+}
+
+.search_box input:focus {
+  outline: none;
+}
+
+.search_box input.search_icon {
+  background: #8c949d;
+  border: none;
+  clear: both;
+  color: #fff;
+  cursor: pointer;
+  height: auto;
+  margin: 0;
+  margin-left: -5px;
+  opacity: 1;
+  padding: 10px;
+  transition: all 0.1s ease;
+  width: 10%;
+}
+
+.search_box input.search_icon:hover {
+  background: #0aab9f;
+}
+
+/* Spinner button for menus Mobile devices */
+.spinner-master input[type=checkbox] {
+  display: none;
+}
+
+.spinner-master {
+  height: 0;
+}
+
+@media all and (max-width: 768px) {
+
+  /* Search feature */
+  #search {
+    padding: auto;
+  }
+
+  .social-search {
+    margin: 0;
+  }
+
+  .smallnav .spinner-master, .smallnav a.social-search-btn > i {
+    -webkit-transition: margin 0.3s ease, height 0.3s ease;
+    -moz-transition: margin 0.3s ease, height 0.3s ease;
+    -ms-transition: margin 0.3s ease, height 0.3s ease;
+    -o-transition: margin 0.3s ease, height 0.3s ease;
+    transition: margin 0.3s ease, height 0.3s ease;
+  }
+
+  .smallnav .spinner-master {
+    margin: 5px 0;
+  }
+
+  a.social-search-btn > i {
+    margin-top: 5px;
+  }
+
+  .smallnav a.social-search-btn > i {
+    margin: 0;
+  }
+
+  .search_box {
+    position: absolute;
+    top: auto;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .search_box input {
+    width: 70%;
+  }
+
+  .search_box input.search_icon {
+    width: 17%;
+  }
+
+  /* Spinner button for menus Mobile devices */
+  .spinner-master * {
+    transition: all 0.3s;
+    box-sizing: border-box;
+  }
+
+  .spinner-master {
+    position: relative;
+    margin: 10px 0;
+    height: 30px;
+    width: 30px;
+    float: left;
+  }
+
+  .spinner-master label {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    left: 0;
+  }
+
+  .spinner-master .spinner {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    padding: 0;
+    background-color: #989898;
+  }
+
+  .spinner-master .diagonal.part-1 {
+    position: relative;
+    float: left;
+  }
+
+  .spinner-master .horizontal {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+  }
+
+  .spinner-master .diagonal.part-2 {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+  }
+
+  .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal {
+    opacity: 0;
+  }
+
+  .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-top: 10px;
+    background: #0aab9f;
+  }
+
+  .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: -12px;
+    background: #0aab9f;
+  }
+
+  .menu {
+    clear: both;
+    min-width: inherit;
+    float: none;
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  a.navbar-brand.shown {
+    margin-right: 88px;
+  }
+
+  .navbar > div:nth-child(1) > div.menu.navbar-collapse.collapse > ul.navbar-margin {
+    margin-left: 130px;
+  }
+}
+
+header > div.container > section > div > div:nth-child(1) > a {
+  color: #d0d0d0;
+  text-decoration: none;
+}
+
+header > div.container > section > div > div:nth-child(1) > a:hover {
+  color: #0aab9f;
+}
+
+.big-logo > span {
+  font-size: 500%;
+  line-height: 50px;
+}
+
+.big-logo, .logo-description {
+  display: inline-block;
+}
+
+.logo-description > div {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+//////////////////////////////////////////////////////////////
+
+/*
+* COURSE
+*/
+
+.top-nav {
+  background-color: $nav-bg-color;
+  color: $nav-text-color;
+  height: 60px;
+  margin-bottom: 20px;
+
+  .logo {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+  }
+
+  .top-nav-items {
+    @extend %inline-list;
+    float: left;
+    font-size: .9em;
+    line-height: 60px;
+    margin-left: 40px;
+
+    a {
+      color: $nav-link-color;
+      display: block;
+      font-weight: 400;
+      height: 60px;
+      padding: 0 20px;
+      text-decoration: $link-decoration;
+      @include transition(background-color, 100ms, ease-in);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

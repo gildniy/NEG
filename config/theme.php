@@ -94,7 +94,7 @@ return array(
 
         // Before all event, this event will effect for global.
         'before' => function ($theme) {
-            //$theme->setTitle('Something in global.');
+            $theme->setTitle('NEG | ');
         },
 
         // This event will fire as a global you can add any assets you want here.

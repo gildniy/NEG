@@ -1,6 +1,6 @@
 <?php namespace Neg\Http\Controllers;
 
-class DashBoardController extends Controller
+class DashBoardController extends NegBaseController
 {
 
     /**
@@ -20,10 +20,16 @@ class DashBoardController extends Controller
      */
     public function index()
     {
-        $theme = \Theme::uses('backend')->layout('be');
+        $theme = \Theme::uses('be')->layout('be');
 
         return $theme->of('users.userpanel.dashboard')
             ->render(200);
+    }
+
+    public function dashboard()
+    {
+        $theme = \Theme::uses('back-end')->layout('default');
+        return $theme->of('users.userpanel.home')->render(200);
     }
 
 }

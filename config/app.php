@@ -178,6 +178,9 @@ return [
         Luminol\Randomizr\Providers\RandomizrServiceProvider::class,
         McCool\LaravelAutoPresenter\AutoPresenterServiceProvider::class,
         JeroenG\Packager\PackagerServiceProvider::class,
+        CodeZero\Cookie\LaravelCookieServiceProvider::class,
+        Riari\Forum\ForumServiceProvider::class,
+        LaravelDoctrine\ORM\DoctrineServiceProvider::class,
     ],
 
     /*
@@ -248,6 +251,9 @@ return [
         'Newsletter' => Spatie\Newsletter\NewsletterFacade::class,
         'Menu' => Caffeinated\Menus\Facades\Menu::class,
         'Randomizr' => Luminol\Randomizr\Facades\Randomizr::class,
+        'EntityManager' => LaravelDoctrine\ORM\Facades\EntityManager::class,
+        'Registry' => LaravelDoctrine\ORM\Facades\Registry::class,
+        'Doctrine' => LaravelDoctrine\ORM\Facades\Doctrine::class
     ]
 
 ];

@@ -1,0 +1,62 @@
+/**
+* Global
+*/
+
+/**
+* Main Colors
+*/
+
+$light-color: #fff;
+$dark-color: #555;
+$default-color: #f0f0f0;
+$primary-color: #0aab9f;
+$secondary-color: #365977;
+$notice-color: #f8d034;
+$error-color: #9d73c9;
+
+/**
+* Body style
+*/
+
+$body-bg-color: $light-color;
+
+/**
+* Typography
+*/
+
+$body-text-color: $dark-color;
+$body-font-family: "Open Sans", sans-serif;
+$body-font-size: 100%;
+$body-line-height: 150%;
+
+$link-color: $primary-color;
+$link-weight: 600;
+$link-decoration: none;
+
+/**
+* Buttons
+*/
+
+$buttons-border-radius: 1px;
+
+$button-default-bg-color: $default-color;
+$button-primary-bg-color: $primary-color;
+$button-secondary-bg-color: $secondary-color;
+$button-notice-bg-color: $notice-color;
+$button-error-bg-color: $error-color;
+
+$button-default-text-color: $dark-color;
+$button-no-default-text-color: $light-color;
+$button-primary-text-color: $button-no-default-text-color;
+$button-secondary-text-color: $button-no-default-text-color;
+$button-notice-text-color: $button-no-default-text-color;
+$button-error-text-color: $button-no-default-text-color;
+
+/**
+* Navigation
+*/
+
+$nav-bg-color: rgba($primary-color, .5);
+$nav-text-color: $dark-color;
+$nav-link-color: $light-color;
+

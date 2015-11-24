@@ -9,7 +9,6 @@ use Lang;
 use Mail;
 use Neg\Events\UserWasLoggedInEvent;
 use Neg\Events\UserWasRegisteredEvent;
-use Neg\Http\Controllers\NegBaseController as BaseController;
 use Neg\Http\Requests;
 use Neg\Http\Requests\CreateUserRequest;
 use Neg\Http\Requests\UpdateUserPasswordRequest;
@@ -28,7 +27,7 @@ use View;
  *
  * Implements actions regarding user management
  */
-class UserController extends BaseController
+class UserController extends NegBaseController
 {
 
     /*
@@ -56,7 +55,7 @@ class UserController extends BaseController
     {
         if (Confide::user()->is('admin|super')) {
 
-            $theme = Theme::uses('backend')->layout('be');
+            $theme = Theme::uses('be')->layout('be');
 
             $view = array(
                 'users' => $this->userRepository->paginate(10)
@@ -288,10 +287,11 @@ class UserController extends BaseController
             return redirect(route('userpanel.dashboard'));
         }
 
-        $theme = Theme::uses('frontend')->layout('fe');
-
-        return $theme->of(Config::get('confide.signup_form'))
-            ->render(200);
+//        $theme = Theme::uses('fe')->layout('fe');
+//
+//        return $theme->of(Config::get('confide.signup_form'))
+//            ->render(200);
+        return view('users.signup');
 
     }
 
@@ -339,10 +339,11 @@ class UserController extends BaseController
             return redirect(route('userpanel.dashboard'));
         }
 
-        $theme = Theme::uses('frontend')->layout('fe');
-
-        return $theme->of(Config::get('confide.login_form'))
-            ->render(200);
+//        $theme = Theme::uses('fe')->layout('fe');
+//
+//        return $theme->of(Config::get('confide.login_form'))
+//            ->render(200);
+        return view('users.login');
     }
 
     /**
@@ -360,7 +361,9 @@ class UserController extends BaseController
             //This seed the last_login field with the \DateTime object
             Event::fire(new UserWasLoggedInEvent);
 
+//            return Redirect::intended('userpanel/dashboard');
             return Redirect::intended('userpanel/dashboard');
+
         } else {
             if ($repo->isThrottled($input)) {
                 $err_msg = Lang::get('confide.alerts.too_many_attempts');
@@ -407,7 +410,7 @@ class UserController extends BaseController
             return redirect(route('userpanel.dashboard'));
         }
 
-        $theme = Theme::uses('frontend')->layout('fe');
+        $theme = Theme::uses('fe')->layout('fe');
 
         return $theme->of(Config::get('confide.forgot_password_form'))
             ->render(200);
@@ -450,7 +453,7 @@ class UserController extends BaseController
             'users' => $token
         );
 
-        $theme = Theme::uses('frontend')->layout('fe');
+        $theme = Theme::uses('fe')->layout('fe');
 
         return $theme->of(Config::get('confide.reset_password_form'), $view)
             ->render(200);
